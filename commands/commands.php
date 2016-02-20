@@ -1,0 +1,4 @@
+<?php
+$message->channel->sendMessage(":negative_squared_cross_mark: Here's a list of my commands!");
+$message->channel->sendMessage("```My *master only* commands are tagged. \n #restart             // Restarts Paradox bot. *Master-only* \n #mimic [text]       // mimics last message \n #afk [text]        // sets an away message \n #back             // stops away message \n #status [text]   // changes the bots status \n #purge [number]       // removes msgs from chat *Master-only* \n #info                // posts bot information. \n #kick [user]        // kicks someone from server. *Master-only* \n #addmaster [user]  // makes user my master. *Master-only* \n #delmaster [user] // remove user from master. *Master-only* \n #mkchan [name]   // creates channel in server. *Master-only* \n\n                   More commands coming soon!```");
+?>
