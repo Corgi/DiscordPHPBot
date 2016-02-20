@@ -28,8 +28,9 @@ open config.ini fill in your email and password and other information needed.
 
 before first run under [channels] add: Your channel name = 1
 example if your server name is: Max's Bakery add: 
-```[channels]
-Max's Bakery = 1```
+*[channels]
+
+Max's Bakery = 1*
 
 
 save, and open StartBot.bat. If you have any issues Join Paradox Lounge Discord Chat
