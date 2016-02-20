@@ -19,7 +19,13 @@ open **config.ini** fill in your email and password and put your discord name in
 <br>
 under *[channels]* add: Your channel name = 1<br>
 example if your server name is: Richmond Bakery Do this: <br>
-*[channels]* <br>
-*Richmond Bakery = 1* <br>
-save, and open *StartBot.bat*. If you have any issues Join Paradox Lounge Discord Chat<br>
-https://discord.gg/0pTKzt2BDIoA9uix
+**[channels]** <br>
+**Richmond Bakery = 1** <br>
+save, and open **StartBot.bat**. If you have any issues Join Paradox Lounge Discord Chat<br>
+https://discord.gg/0pTKzt2BDIoA9uix<br><br>
+Known Issues & Fixes
+------
+Getting a Guzzle error msg **cURL error 60** *SSL Certification*<br>
+**FIX:** Download the cacert.pem file from above, place somewhere safe.<br>
+Open your php.ini file and place this line somewhere:<br>
+**curl.cainfo = "(cacert.pem directory here)\cacert.pem"**<br>
