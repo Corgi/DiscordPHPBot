@@ -1,0 +1,20 @@
+{
+    "name": "david/discord-php-bot",
+    "description": "An example bot that uses DiscordPHP",
+    "require": {
+        "team-reflex/discord-php": "dev-voice",
+        "symfony/var-dumper": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "David",
+            "email": "david@team-reflex.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bot\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
