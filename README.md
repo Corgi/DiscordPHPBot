@@ -6,10 +6,9 @@ Changes log
 ------
 Fixed AFK bot not responding when user mention string position = 1<br>
 However I've not completed the fix for the non-mention trigger at position 1
-added cacert.pem file and a hot fix below for *cURL error 60 SSL Certification error*<br><br>
+added **cacert.pem** and a fix below for *SSL Certification error*<br>
 to install:
 ------
-
 Download the Bot Zip file & Place in a folder<br>
 Download composer from: https://getcomposer.org/download/<br>
 **Direct setup: https://getcomposer.org/Composer-Setup.exe** <Br>
