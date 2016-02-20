@@ -29,12 +29,6 @@ after install, open command prompt in bot folder, run: composer install
 
 
 
-
-if completed without errors:
-
-
-
-
 open config.ini fill in your email and password and other information needed.
 
 before first run under [channels] add: Your channel name = 1  example if your server name is: Max's Bakery add: Max's Bakery = 1
