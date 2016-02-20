@@ -31,7 +31,6 @@ example if your server name is: Max's Bakery add:
 
 
 *[channels]*
-
 *Max's Bakery = 1*
 
 
