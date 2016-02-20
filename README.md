@@ -7,7 +7,7 @@ https://github.com/teamreflex/DiscordPHP
 Changes log
 ------
 
-Fixed AFK bot not responding when user mention string position = 1<br
+Fixed AFK bot not responding when user mention string position = 1<br>
 However I've not completed the fix for the non-mention trigger at position 1
 
 
