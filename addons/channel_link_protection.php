@@ -1,23 +1,19 @@
 <?php
-
+$y=0;
 // ################## Link protection Removal ###################
-// print_r($datas);
 foreach( $datas['owners'] as $key=>$data )
 {
-// echo htmlspecialchars( $data["name"] );
-// htmlspecialchars( $section );
-// echo "OWNER: " . htmlspecialchars( $key . " - " . $data );
-
 if(($message->author->username == $key) && ($data == 1))
 {
 $l = $l + 1;
+$y=$y+1;
 }
 
 } // end of foreach loop
 
 foreach( $datas['linkProtect'] as $key=>$data )
 {
-if (($message->full_channel->guild->name == $key) && ($data > 0))
+if ($message->full_channel->guild->name == $key)
 {
 $r = $r + 1;
 }
@@ -33,7 +29,7 @@ if((strpos($message->content, ".com") > 0) || (strpos($message->content, "www.")
 // {
 $den=$message->author->username;
 
-if($message->author->username != "Paradox")
+if(($message->author->username != "Paradox") && ($y < 1))
 {
 
 		$rmmessages = 0;
