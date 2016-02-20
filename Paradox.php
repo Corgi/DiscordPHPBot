@@ -123,11 +123,11 @@ if(($rawdat == "kick") && ($ad > 0)) { include 'commands/kick.php'; } // kicks a
 if(($rawdat == "addmaster") && ($ad > 0)) { include 'commands/addmaster.php'; } // adds a user to my masters list.
 if(($rawdat == "delmaster") && ($ad > 0)) { include 'commands/delmaster.php'; } // removes a user from my masters list.
 if($rawdat == "role") { include 'commands/role.php'; } // This command is still in the making.
-if($rawdat == "mkchan") { include 'commands/mkchan.php'; } // Creates channel in server.
-if($rawdat == "grantchannel") { include 'commands/grantchannel.php'; } // Allows the bot to moderate on your channel
-if($rawdat == "stopchannel") { include 'commands/stopchannel.php'; } // Stops the bot from moderating on channel.
-if($rawdat == "allowlinks") { include 'commands/allowlinks.php'; } // Allows links on server
-if($rawdat == "denylinks") { include 'commands/denylinks.php'; } // Removes links on server unless the user is on my masters list.
+if(($rawdat == "mkchan") && ($ad > 0)) { include 'commands/mkchan.php'; } // Creates channel in server.
+if(($rawdat == "grantchannel") && ($ad > 0)) { include 'commands/grantchannel.php'; } // Allows the bot to moderate on your channel
+if(($rawdat == "stopchannel") && ($ad > 0)) { include 'commands/stopchannel.php'; } // Stops the bot from moderating on channel.
+if(($rawdat == "allowlinks") && ($ad > 0)) { include 'commands/allowlinks.php'; } // Allows links on server
+if(($rawdat == "denylinks") && ($ad > 0)) { include 'commands/denylinks.php'; } // Removes links on server unless the user is on my masters list.
 
 
 } // isset end
