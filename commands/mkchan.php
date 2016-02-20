@@ -1,5 +1,5 @@
 <?php
-$guild = $discord->guilds->get('id', '146064483121496064');////
+$guild = $discord->guilds->get('id', '<SERVER ID>');////
     
     $everyone_role = $guild->roles->get('name', '@everyone');
     
@@ -10,7 +10,7 @@ $deny = new \Discord\Parts\Permissions\ChannelPermission;
 $channel = new \Discord\Parts\Channel\Channel();
 $channel->name = 'Testcreate';
 $channel->type = 'text';
-$channel->guild_id = '146064483121496064';    
+$channel->guild_id = '<SERVER ID>';    
 $channel->save();
 
 $channel->setPermissions($everyone_role, $allow, $deny);
