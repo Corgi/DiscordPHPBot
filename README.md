@@ -4,8 +4,8 @@ Created using DiscordPHP from team-reflex
 https://github.com/teamreflex/DiscordPHP<br>
 Current Issues / Change Log
 ------
-**running #delmaster command removes the master** <br>
-**However it's removing allowLinks value in conifg.ini** *working on patch now*<br><br>
+**Paradox Version:** *0.0.3b*<br><br>
+allowlinks was redundant. moved to [linkProtect]<br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
 to install:
 ------
