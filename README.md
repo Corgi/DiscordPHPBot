@@ -5,8 +5,8 @@ https://github.com/teamreflex/DiscordPHP<br>
 Changes log
 ------
 Fixed AFK bot not responding when user mention string position = 1<br>
-However I've not completed the fix for the non-mention trigger at position 1<br><br>
-
+However I've not completed the fix for the non-mention trigger at position 1
+added cacert.pem file and a hot fix below for *cURL error 60 SSL Certification error*<br><br>
 to install:
 ------
 
