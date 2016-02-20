@@ -6,7 +6,7 @@ https://github.com/teamreflex/DiscordPHP
 
 Changes log
 ------
-<div style="position:absolute; top 20px; left: 15px;">*Testing this*</div>
+<div style="position:absolute; top 20px; left: 150px;">*Testing this*</div>
 Fixed AFK bot not responding when user mention string position = 1<br>
 However I've not completed the fix for the non-mention trigger at position 1
 
