@@ -2,8 +2,9 @@ Created using DiscordPHP from team-reflex
 ======
 
 https://github.com/teamreflex/DiscordPHP<br>
-Current Issues / Change Log
+Current Issues / Change Log / Upcomming
 ------
+
 **Paradox Version:** *0.0.3b*<br><br>
 allowlinks was redundant. moved to [linkProtect]<br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
