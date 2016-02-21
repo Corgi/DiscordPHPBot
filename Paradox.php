@@ -37,8 +37,7 @@ include 'INI.class.php';
 //
 // $message->author->id;
 
-
-
+// $_SESSION['last_run'] = time() - (60 * 5);
 
 include 'vendor/autoload.php';
 
@@ -64,12 +63,8 @@ $d = $ini->read('config.ini');
 echo "            #    Login complete, Listening...    #".PHP_EOL;
 echo "            ######################################" . PHP_EOL;
 
-
-
+ 
 	$ws->on(Event::MESSAGE_CREATE, function ($message, $discord, $newdiscord) use ($ws) {
-
-	
-
 
 $dat = explode("#", $message->content); // using normal param #paradox example #paradox who am i?
 $rawdat=$dat[1];
@@ -107,6 +102,17 @@ include 'addons/channel_link_protection.php'; // Channel link protection
 $ad=0;
 $am=0;
 
+
+// ##### Run the GitHub bot every 5 minutes #####
+
+// if(time() >= $_SESSION['last_run'] + (60 * 2)) { // 60 * 2 is 2 minutes
+// include 'addons/github.php';
+// $_SESSION['last_run'] = time();
+
+// } 
+ // #############################################
+ 
+ 
 if(isset($special[1]))  // this is using the special command param @Paradox instead of #cmd
 {
 include 'commands/whatsmyrole.php'; // @Paradox what's my role? returns if the user is my master or not.
@@ -139,7 +145,7 @@ if(($rawdat == "denylinks") && ($ad > 0)) { include 'commands/denylinks.php'; } 
 if(($rawdat == "log") && ($ad > 0)) { include 'commands/log.php'; } // posts a log into the bot_log channel.
 if(($rawdat == "logserver") && ($ad > 0)) { include 'commands/logserver.php'; } // sets a server for your bot log.
 if(($rawdat == "logchannel") && ($ad > 0)) { include 'commands/logchannel.php'; } // sets a channel for your bot log.
-
+if($rawdat == "reportuser") { include 'commands/reportuser.php'; } // sets a channel for your bot log.
 
 
 } // isset end
