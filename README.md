@@ -2,6 +2,9 @@ Created using DiscordPHP from team-reflex
 ======
 
 https://github.com/teamreflex/DiscordPHP<br>
+Need Help?
+------
+Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <br>
 Current Issues / Change Log / Upcomming
 ------
 **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br>
