@@ -145,8 +145,9 @@ if(($rawdat == "denylinks") && ($ad > 0)) { include 'commands/denylinks.php'; } 
 if(($rawdat == "log") && ($ad > 0)) { include 'commands/log.php'; } // posts a log into the bot_log channel.
 if(($rawdat == "logserver") && ($ad > 0)) { include 'commands/logserver.php'; } // sets a server for your bot log.
 if(($rawdat == "logchannel") && ($ad > 0)) { include 'commands/logchannel.php'; } // sets a channel for your bot log.
-if($rawdat == "reportuser") { include 'commands/reportuser.php'; } // sets a channel for your bot log.
-
+if($rawdat == "reportuser") { include 'commands/reportuser.php'; } // reports a user.
+if($rawdat == "listreports") { include 'commands/listreports.php'; } // lists reported users.
+if($rawdat == "delreport") { include 'commands/delreport.php'; } // deletes a report on a user usage: #delreport <username>
 
 } // isset end
 
