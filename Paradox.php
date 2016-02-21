@@ -12,6 +12,7 @@ use Discord\Parts\Permissions\RolePermission;
 use discord\Parts\User\Member;
 $d=0;
 $rawdata=0;
+
 include 'INI.class.php'; 
 
 // **** Emoji cheat sheet: http://www.emoji-cheat-sheet.com/ ****
@@ -35,6 +36,8 @@ include 'INI.class.php';
 // $message->channel->sendMessage("msg")
 //
 // $message->author->id;
+
+
 
 
 include 'vendor/autoload.php';
@@ -62,7 +65,12 @@ echo "            #    Login complete, Listening...    #".PHP_EOL;
 echo "            ######################################" . PHP_EOL;
 
 
+
 	$ws->on(Event::MESSAGE_CREATE, function ($message, $discord, $newdiscord) use ($ws) {
+
+	
+
+
 $dat = explode("#", $message->content); // using normal param #paradox example #paradox who am i?
 $rawdat=$dat[1];
 
@@ -128,6 +136,10 @@ if(($rawdat == "grantchannel") && ($ad > 0)) { include 'commands/grantchannel.ph
 if(($rawdat == "stopchannel") && ($ad > 0)) { include 'commands/stopchannel.php'; } // Stops the bot from moderating on channel.
 if(($rawdat == "allowlinks") && ($ad > 0)) { include 'commands/allowlinks.php'; } // Allows links on server
 if(($rawdat == "denylinks") && ($ad > 0)) { include 'commands/denylinks.php'; } // Removes links on server unless the user is on my masters list.
+if(($rawdat == "log") && ($ad > 0)) { include 'commands/log.php'; } // posts a log into the bot_log channel.
+if(($rawdat == "logserver") && ($ad > 0)) { include 'commands/logserver.php'; } // sets a server for your bot log.
+if(($rawdat == "logchannel") && ($ad > 0)) { include 'commands/logchannel.php'; } // sets a channel for your bot log.
+
 
 
 } // isset end
