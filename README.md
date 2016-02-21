@@ -5,7 +5,7 @@ https://github.com/teamreflex/DiscordPHP<br>
 Current Issues / Change Log / Upcomming
 ------
 **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br>
-**Paradox Version:** *0.0.3b*<br><br>
+**Paradox Version:** 0.0.3b<br><br>
 Added a bot log option. it's somewhat useless atm but works!<br>
 *[ADDED]*<br>
 **#log** *; adds a log to bot log channel.* <br>**#logchannel** *; adds a log channel.* <br> **#logserver** *; adds a log server*<br><br>
