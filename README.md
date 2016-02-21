@@ -15,7 +15,7 @@ Added a bot log option. it's somewhat useless atm but works!<br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
 to install:
 ------
-**[without git]**
+**[without git]**<br>
 Download the Bot Zip file & Place in a folder<br>
 Download composer from: https://getcomposer.org/download/<br>
 **Direct setup: https://getcomposer.org/Composer-Setup.exe** <Br>
