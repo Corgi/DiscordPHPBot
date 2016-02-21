@@ -20,8 +20,8 @@ Download the Bot Zip file & Place in a folder<br>
 Download composer from: https://getcomposer.org/download/<br>
 **Direct setup: https://getcomposer.org/Composer-Setup.exe** <Br>
 after you install, open command prompt from the bots DIR, run command: *composer install*<br>
-**expect some errors using this method**<br><br>
-**[/without git]**<br><br>
+**expect some errors using this method**<br>
+**[/without git]**<br>
 **[with git]**<br>
 Open your git bash or cmd and type the following:<br>
 *git clone https://github.com/proxikal/DiscordPHPBot*<br>
