@@ -15,11 +15,22 @@ Added a bot log option. it's somewhat useless atm but works!<br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
 to install:
 ------
+**[without git]**
 Download the Bot Zip file & Place in a folder<br>
 Download composer from: https://getcomposer.org/download/<br>
 **Direct setup: https://getcomposer.org/Composer-Setup.exe** <Br>
 after you install, open command prompt from the bots DIR, run command: *composer install*<br>
 **expect some errors using this method**<br><br>
+**[/without git]**<br><br>
+**[with git]**<br>
+Open your git bash or cmd and type the following:<br>
+*git clone https://github.com/proxikal/DiscordPHPBot*<br>
+Now download composer from the link above.<br>
+after you've installed composer go back to your git bash or cmd window<br>
+type: *cd DiscordPHPBot* and then type *composer install* wait till it's done<br>
+**[/with git]**<br><br>
+
+**after you've completed one of the above options:**<br>
 open **config.ini** fill in your email and password and put your discord name in the owner section.<br>
 under *[channels]* add: Your channel name = 1<br>
 example if your server name is: Richmond Bakery Do this: <br>
