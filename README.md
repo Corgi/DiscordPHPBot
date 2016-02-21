@@ -23,7 +23,7 @@ example if your server name is: Richmond Bakery Do this: <br>
 **[channels]** <br>
 **Richmond Bakery = 1** <br>
 save, and open **StartBot.bat**. If you have any issues Join Paradox Lounge Discord Chat<br>
-https://discord.gg/0pTKzt2BDImimvOa (NEW LINK. it will not expire this time!) <br>
+https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
 Known Issues & Fixes
 ------
 Getting a Guzzle error msg **cURL error 60** *SSL Certification*<br>
