@@ -7,11 +7,10 @@ Need Help?
 Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <br>
 Current Issues / Change Log / Upcomming
 ------
-**[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br>
-**Paradox Version:** 0.0.3b<br><br>
-Added a bot log option. it's somewhat useless atm but works!<br>
-*[ADDED]*<br>
-**#log** *; adds a log to bot log channel.* <br>**#logchannel** *; adds a log channel.* <br> **#logserver** *; adds a log server*<br><br>
+**Paradox Version:** 0.0.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
+added `#weather <zip>` command and `#shorturl <url>` using bit.ly<br>
+[**They Are Free**] You're required to setup API keys for both sites to use these cmds. [**They Are Free**]<br>
+add your api keys in **config.ini** under *[apis]*<br><br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
 to install:
 ------
