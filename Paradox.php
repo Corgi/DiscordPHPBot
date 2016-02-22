@@ -37,7 +37,8 @@ include 'INI.class.php';
 //
 // $message->author->id;
 
-// $_SESSION['last_run'] = time() - (60 * 5);
+
+
 
 include 'vendor/autoload.php';
 
@@ -63,8 +64,12 @@ $d = $ini->read('config.ini');
 echo "            #    Login complete, Listening...    #".PHP_EOL;
 echo "            ######################################" . PHP_EOL;
 
- 
+
+
 	$ws->on(Event::MESSAGE_CREATE, function ($message, $discord, $newdiscord) use ($ws) {
+
+	
+
 
 $dat = explode("#", $message->content); // using normal param #paradox example #paradox who am i?
 $rawdat=$dat[1];
@@ -99,26 +104,16 @@ if($c > 0)
 {
 include 'addons/afk_bot.php'; // Afk bot 
 include 'addons/channel_link_protection.php'; // Channel link protection
+include 'addons/isMuted.php';
 $ad=0;
 $am=0;
 
-
-// ##### Run the GitHub bot every 5 minutes #####
-
-// if(time() >= $_SESSION['last_run'] + (60 * 2)) { // 60 * 2 is 2 minutes
-// include 'addons/github.php';
-// $_SESSION['last_run'] = time();
-
-// } 
- // #############################################
- 
- 
 if(isset($special[1]))  // this is using the special command param @Paradox instead of #cmd
 {
 include 'commands/whatsmyrole.php'; // @Paradox what's my role? returns if the user is my master or not.
 }
 
-if((isset($dat[1]) && ($message->author->username != "Paradox")) // This is the normal command param #example
+if(isset($dat[1])) // This is the normal command param #example
 {
 include 'addons/chkowner.php'; // checks to see if user is my master or not.
 
@@ -148,6 +143,8 @@ if(($rawdat == "logchannel") && ($ad > 0)) { include 'commands/logchannel.php'; 
 if($rawdat == "reportuser") { include 'commands/reportuser.php'; } // reports a user.
 if($rawdat == "listreports") { include 'commands/listreports.php'; } // lists reported users.
 if($rawdat == "delreport") { include 'commands/delreport.php'; } // deletes a report on a user usage: #delreport <username>
+if($rawdat == "mute") { include 'commands/mute.php'; } // deletes user's text in chat. #mute <user>
+if($rawdat == "unmute") { include 'commands/unmute.php'; } // deletes a report on a user usage: #delreport <username>
 
 } // isset end
 
@@ -168,3 +165,4 @@ if($rawdat == "delreport") { include 'commands/delreport.php'; } // deletes a re
 });
 
 $ws->run();
+?>
