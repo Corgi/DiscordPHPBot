@@ -148,6 +148,7 @@ if($rawdat == "unmute") { include 'commands/unmute.php'; } // deletes a report o
 if($rawdat == "giphy") { include 'commands/giphy.php'; } // posts a random giphy img #giphy <keyword>
 if($rawdat == "sticker") { include 'commands/sticker.php'; } // posts a random giphy sticker #sticker <keyword>
 if($rawdat == "weather") { include 'commands/weather.php'; } // get's the weather from a zip code #weather <ZIPCODE> or <CITYNAME>
+if($rawdat == "shorturl") { include 'commands/shorturl.php'; } // uses bit.ly #shorturl <url> you have to setup a OAUTH key from bit.ly then place in config.ini under [apis].
 
 } // isset end
 
