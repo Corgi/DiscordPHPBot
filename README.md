@@ -12,7 +12,7 @@ added `#weather <zip>` command and `#shorturl <url>` using bit.ly<br>
 You're required to setup API keys for both sites to use these cmds. [**They Are Free**]<br>
 Scroll down to learn how to set them up!<br>
 <br>
-added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
+added **cacert.pem** and a fix below!
 to install:
 ------
 **[without git]**<br>
@@ -25,7 +25,7 @@ In windows 7, 8 and I think 10 as well: you can Hold down SHIFT and right click 
 You will see a context menu with a new item - > **open command window here** (click it)<br>
 *(or in a command prompt type: cd C:\<your path>\Paradox\DiscordPHPBot)* <br>
 Now that the command line is opened in our Work DIR. We can type: `composer install` <br>
-*Disregard the errors using this method, the bot still works.* once it's completed you can now<br>
+*Disregard the errors using this method, the bot still works.*<br>
 This bot does not run in a web browser. **ONLY COMMAND PROMPT**.<br>
 Any problems, just join our discord server by clicking the link above!<br>
 **[/without git]**<br><br>
