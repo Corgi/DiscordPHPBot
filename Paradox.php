@@ -145,6 +145,9 @@ if($rawdat == "listreports") { include 'commands/listreports.php'; } // lists re
 if($rawdat == "delreport") { include 'commands/delreport.php'; } // deletes a report on a user usage: #delreport <username>
 if($rawdat == "mute") { include 'commands/mute.php'; } // deletes user's text in chat. #mute <user>
 if($rawdat == "unmute") { include 'commands/unmute.php'; } // deletes a report on a user usage: #delreport <username>
+if($rawdat == "giphy") { include 'commands/giphy.php'; } // posts a random giphy img #giphy <keyword>
+if($rawdat == "sticker") { include 'commands/sticker.php'; } // posts a random giphy sticker #sticker <keyword>
+if($rawdat == "weather") { include 'commands/weather.php'; } // get's the weather from a zip code #weather <ZIPCODE> or <CITYNAME>
 
 } // isset end
 
