@@ -9,9 +9,8 @@ Current Issues / Change Log / Upcomming
 ------
 **Paradox Version:** 0.0.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
 added `#weather <zip>` command and `#shorturl <url>` using bit.ly<br>
-[**They Are Free**] You're required to setup API keys for both sites to use these cmds. [**They Are Free**]<br>
-add your api keys in **config.ini** under *[apis]*<br><br>
-In **commands/shorturl.php** on line 15 you will need to add your bit.ly info `&login=USERNAME:PASSWORD`<br>
+You're required to setup API keys for both sites to use these cmds. [**They Are Free**]<br>
+Scroll down to learn how to set them up!<br>
 <br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
 to install:
