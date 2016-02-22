@@ -113,7 +113,7 @@ if(isset($special[1]))  // this is using the special command param @Paradox inst
 include 'commands/whatsmyrole.php'; // @Paradox what's my role? returns if the user is my master or not.
 }
 
-if(isset($dat[1])) // This is the normal command param #example
+if((isset($dat[1])) && ($message->author->username != "Paradox")) // This is the normal command param #example
 {
 include 'addons/chkowner.php'; // checks to see if user is my master or not.
 
