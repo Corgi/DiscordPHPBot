@@ -11,6 +11,8 @@ Current Issues / Change Log / Upcomming
 added `#weather <zip>` command and `#shorturl <url>` using bit.ly<br>
 [**They Are Free**] You're required to setup API keys for both sites to use these cmds. [**They Are Free**]<br>
 add your api keys in **config.ini** under *[apis]*<br><br>
+In **commands/shorturl.php** on line 15 you will need to add your bit.ly info `&login=USERNAME:PASSWORD`<br>
+<br>
 added **cacert.pem** and a fix below for *cURL error 60: SSL Certification error*<br>
 to install:
 ------
