@@ -65,11 +65,11 @@ Onced signed in visit: https://bitly.com/a/oauth_apps type your password and cli
 Once you've generated an OAUTH key copy and place it under *[apis]* in the bitly spot
 it should look like this:<br>
 *[apis]*<br>
-bitly = "your OAUTH code"<br>
-Now, you need to browser to **commands/shorturl.php** open in an editor.<br>
+bitly = "your OAUTH code"<br><br>
+Now, you need to browse to **commands/shorturl.php** open in an editor.<br>
 on `line 15` you need to add your bit.ly username and password information.<br>
-change  `&login=USERNAME:PASSWORD` to your credentials.<br>
-**And you're done! use #shorturl <url>**<br><br>
+change  `&login=USERNAME:PASSWORD` to your credentials.<br><br>
+**And you're done! use #shorturl http://url.com**<br><br>
 cURL error 60: SSL Certification error
 ------
 **FIX:** Download the cacert.pem file from above, place somewhere safe.<br>
