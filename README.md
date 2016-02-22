@@ -64,7 +64,7 @@ make sure you sign up through **bit.ly** or you will have issues getting your **
 Onced signed in visit: https://bitly.com/a/oauth_apps type your password and click **Generate**<br>
 Once you've generated an OAUTH key copy and place it under *[apis]* in the bitly spot
 it should look like this:<br>
-*[apis]*<br><br>
+*[apis]*<br>
 bitly = "your OAUTH code"<br>
 Now, you need to browser to **commands/shorturl.php** open in an editor.<br>
 on `line 15` you need to add your bit.ly username and password information.<br>
