@@ -8,9 +8,8 @@ Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <b
 Current Issues / Change Log / Upcomming
 ------
 **Paradox Version:** 0.0.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
-**Getting ready for a major overhaul. should be live in an hour or so!**
-<br>
-added **cacert.pem** and a fix below!
+**Getting ready for a major overhaul. should be live in an hour or so!**<br>
+
 to install:
 ------
 **[without git]**<br>
