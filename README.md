@@ -5,11 +5,12 @@ https://github.com/teamreflex/DiscordPHP<br>
 Need Help?
 ------
 Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <br>
-Current Issues / Change Log / Upcomming
+Paradox 0.1.1b is here!
 ------
-**Paradox Version:** 0.0.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
-**Getting ready for a major overhaul. should be live in an hour or so!**<br>
-
+**Paradox Version:** 0.1.1b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
+Made installation process a little less painful in **0.1.1b**<br>
+Make sure your bot account is already in your server.<br>
+Gonna make a process so all you have to do is PM him the invite code now.<br>
 to install:
 ------
 **[without git]**<br>
@@ -36,11 +37,11 @@ type: *cd DiscordPHPBot* and then type *composer install* wait till it's done<br
 
 **after you've completed one of the above options:**<br>
 open **config.ini** fill in your email and password and put your discord name in the owner section.<br>
-under *[channels]* add: Your channel name = 1<br>
-example if your server name is: Richmond Bakery<br>
-**[channels]** <br>
-**Richmond Bakery = 1** <br><Br>
-save, and open **StartBot.bat**. If you have any issues Join Paradox Lounge Discord Chat<br>
+save, and open **StartBot.bat**. Once it's loaded he will welcome you and ask you to type `#grantchannel`<br>
+on the server you want his commands to work in.<Br>
+Make sure the account you have the bot running in is already on your server!<br>
+I will set it up so he auto joins. for now, he needs to be in your server<br>
+Before typing #grantchannel. If you have any issues Join Paradox Lounge Discord Chat<br>
 https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
 **if you choose not to use these api's. just comment out the commands in Paradox.php.**<br><br>
 Setting up #weather command
