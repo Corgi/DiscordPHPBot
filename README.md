@@ -69,7 +69,7 @@ Now, you need to browse to **commands/shorturl.php** open in an editor.<br>
 on `line 15` you need to add your bit.ly username and password information.<br>
 change  `&login=USERNAME:PASSWORD` to your credentials.<br><br>
 **And you're done! use #shorturl http://url.com**<br><br>
-Setting up A mashape apikey
+Setting up mashape key
 ------
 First of, visit mashape and signup: https://market.mashape.com<br>
 Once your logged in click your applications, you should see a blue button **"Get the keys"**<br>
