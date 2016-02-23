@@ -1,5 +1,10 @@
 <?php
-$msg=str_replace("#giphy ", "", $message->content);
+$ini = new INI('config.ini');
+$d = $ini->read('config.ini');
+$pref=$d['settings']['Prefix'];
+if($d['commands']['giphy'] == "1")
+{
+$msg=str_replace($pref."giphy ", "", $message->content);
 $msg=str_replace(" ", "+", $msg);
 
  $ch = curl_init();
@@ -10,4 +15,9 @@ $msg=str_replace(" ", "+", $msg);
 	
 	// $message->channel->sendMessage($json->data->images->fixed_height->url); 
 	$message->channel->sendMessage($json->data->image_original_url);
+	}
+	else
+	{
+	$message->reply("This command is disabled.");
+	}
 	?>

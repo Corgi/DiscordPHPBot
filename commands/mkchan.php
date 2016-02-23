@@ -1,6 +1,12 @@
 <?php
+$ini = new INI('config.ini');
+$d = $ini->read('config.ini');
+$pref=$d['settings']['Prefix'];
+
+if($d['commands']['mkchan'] == "1")
+{
 $mkallow=false;
-$mkdat=str_replace("#mkchan ", "", $message->content);
+$mkdat=str_replace($pref."mkchan ", "", $message->content);
 $sp=explode(" ", $mkdat);
 
 foreach( $datas['channels'] as $key=>$data )
@@ -32,5 +38,10 @@ $channel->save();
 $channel->setPermissions($everyone_role, $allow, $deny);
 // $channel->save();
 
+}
+}
+else
+{
+$message->reply("This command is disabled.");
 }
 ?>

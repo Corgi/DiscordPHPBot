@@ -1,5 +1,9 @@
 <?php
-	
+$ini = new INI('config.ini');
+$d = $ini->read('config.ini');
+
+if($d['commands']['purge'] == "1")
+{
 		$rmmessages = $dat[1];
 		$channel = $message->channel;
 		$num = 0;
@@ -15,4 +19,10 @@
 		}
 
 		$message->reply("Purged {$num} messages.");
+		
+}
+else
+{
+$message->reply("This command is disabled.");
+}
 ?>

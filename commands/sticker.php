@@ -1,5 +1,12 @@
 <?php
-$msg=str_replace("#sticker ", "", $message->content);
+$ini2 = new INI('config.ini');
+$dd = $ini2->read('config.ini');
+$pref=$dd['settings']['Prefix'];
+
+if($d['commands']['sticker'] == "1")
+{
+
+$msg=str_replace($pref."sticker ", "", $message->content);
 $msg=str_replace(" ", "+", $msg);
 
  $ch = curl_init();
@@ -10,4 +17,9 @@ $msg=str_replace(" ", "+", $msg);
 	
 	// $message->channel->sendMessage($json->data->images->fixed_height->url); 
 	$message->channel->sendMessage($json->data->image_original_url);
+	}
+	else
+	{
+	$message->reply("This command is disabled.");
+	}
 	?>
