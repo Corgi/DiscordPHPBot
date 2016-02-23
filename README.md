@@ -80,7 +80,6 @@ cURL error 60: SSL Certification error
 **FIX:** Download the cacert.pem file from above, place somewhere safe.<br>
 Open your php.ini file and place this line somewhere:<br>
 **curl.cainfo = "C:\directory here\cacert.pem"**<br>
-
 Documentation
 ------
 More coming soon.
