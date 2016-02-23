@@ -8,9 +8,7 @@ Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <b
 Current Issues / Change Log / Upcomming
 ------
 **Paradox Version:** 0.0.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
-added `#weather <zip>` command and `#shorturl <url>` using bit.ly<br>
-You're required to setup API keys for both sites to use these cmds. [**They Are Free**]<br>
-Scroll down to learn how to set them up!<br>
+Preparing for a big update. should be ready tomorrow.
 <br>
 added **cacert.pem** and a fix below!
 to install:
@@ -44,7 +42,8 @@ example if your server name is: Richmond Bakery<br>
 **[channels]** <br>
 **Richmond Bakery = 1** <br><Br>
 save, and open **StartBot.bat**. If you have any issues Join Paradox Lounge Discord Chat<br>
-https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br><Br>
+https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
+**if you choose not to use these api's. just comment out the commands in Paradox.php.**<br><br>
 Setting up #weather command
 ------
 First off you need to visit Weather underground api:<Br>
@@ -70,6 +69,13 @@ Now, you need to browse to **commands/shorturl.php** open in an editor.<br>
 on `line 15` you need to add your bit.ly username and password information.<br>
 change  `&login=USERNAME:PASSWORD` to your credentials.<br><br>
 **And you're done! use #shorturl http://url.com**<br><br>
+Setting up A mashape apikey
+------
+First of, visit mashape and signup: https://market.mashape.com<br>
+Once your logged in click your applications, you should see a blue button **"Get the keys"**<br>
+Copy your Mashape key to your config.ini under *[apis]* mashape = "<yourkey>"<Br>
+and you're done!<br>
+
 cURL error 60: SSL Certification error
 ------
 **FIX:** Download the cacert.pem file from above, place somewhere safe.<br>
