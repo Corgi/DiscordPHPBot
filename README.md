@@ -9,7 +9,7 @@ Paradox 0.1.1b is here!
 ------
 **Paradox Version:** 0.1.1b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
 Made installation process a little less painful in **0.1.5b**<br>
-Private message the bot: **#join <serverlink>**<br>
+Private message the bot: **#join serverlink**<br>
 Then you will need to type **#grantchannel Your Server Name**<br>
 
 to install:
@@ -38,7 +38,7 @@ type: *cd DiscordPHPBot* and then type *composer install* wait till it's done<br
 
 **after you've completed one of the above options:**<br>
 open **config.ini** fill in your email and password and put your discord name in the owner section.<br>
-Open the bot using **StartBot.bat** and than private message him **#join <serverlink>**<Br>
+Open the bot using **StartBot.bat** and than private message him **#join serverlink**<Br>
 Follow his instructions and in the same PM type: **#grantchannel Your server name**<br>
 
 https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
