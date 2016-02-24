@@ -1,1 +1,1 @@
-02ef=>A new update was pushed, fixing a critical error. \n :new: You can update commands and add new ones \n without restarting the bot!
+02ef=>A new update was pushed, fixing a critical error. => :new: You can update commands and add new ones without restarting the bot!
