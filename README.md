@@ -8,9 +8,10 @@ Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <b
 Paradox 0.1.1b is here!
 ------
 **Paradox Version:** 0.1.1b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
-Made installation process a little less painful in **0.1.1b**<br>
-Make sure your bot account is already in your server.<br>
-Gonna make a process so all you have to do is PM him the invite code now.<br>
+Made installation process a little less painful in **0.1.5b**<br>
+Private message the bot: **#join <serverlink>**<br>
+Then you will need to type **#grantchannel Your Server Name**<br>
+
 to install:
 ------
 **[without git]**<br>
@@ -37,11 +38,9 @@ type: *cd DiscordPHPBot* and then type *composer install* wait till it's done<br
 
 **after you've completed one of the above options:**<br>
 open **config.ini** fill in your email and password and put your discord name in the owner section.<br>
-save, and open **StartBot.bat**. Once it's loaded he will welcome you and ask you to type `#grantchannel`<br>
-on the server you want his commands to work in.<Br>
-Make sure the account you have the bot running in is already on your server!<br>
-I will set it up so he auto joins. for now, he needs to be in your server<br>
-Before typing #grantchannel. If you have any issues Join Paradox Lounge Discord Chat<br>
+Open the bot using **StartBot.bat** and than private message him **#join <serverlink>**<Br>
+Follow his instructions and in the same PM type: **#grantchannel Your server name**<br>
+
 https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
 **if you choose not to use these api's. just comment out the commands in Paradox.php.**<br><br>
 Setting up #weather command
