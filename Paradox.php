@@ -1,5 +1,7 @@
 <?php
 session_start();
+$_SESSION['check_update'] = 0;
+$_SESSION['check_message'] = 0;
 ini_set("log_errors", 1);
 ini_set("error_log", "php-error.log");
 
