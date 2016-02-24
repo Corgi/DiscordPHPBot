@@ -39,5 +39,9 @@ if(($rawdat == "disable") && ($ad > 0)) { include 'commands/disable.php'; } // d
 if($rawdat == "ign") { include 'commands/ign.php'; } // gets a game from ign: #ign Call of duty Black ops.
 if($rawdat == "youtubemp3") { include 'commands/youtubemp3.php'; } // gets a MP3 download link for youtube video. example: #youtubemp3 <id>
 if($rawdat == "pirate") { include 'commands/pirate.php'; } // gets a vide from alluc.to: #pirate New Girl S02E03
+if($rawdat == "chkupdate") { include 'commands/chkupdate.php'; } // Checks if the bot is up to date or not.
+if(($rawdat == "shutdown") && ($ad > 0)) { include 'commands/shutdown.php'; } // Shuts the bot down. Only the Bot Owner can use this.
+
+
 
 ?>
