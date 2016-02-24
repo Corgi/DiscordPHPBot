@@ -1,1 +1,1 @@
-02ef=>A new update was pushed, fixing a critical error. break; :new: You can update commands and add new ones without restarting the bot!
+02ef=>Installation was made easier. PM the bot #join <serverlink> break; :new: Instructions for the new update @ Github `Readme.md`
