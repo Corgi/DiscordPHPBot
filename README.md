@@ -13,7 +13,6 @@ Private message the bot: **#join serverlink**<br>
 Then you will need to type **#grantchannel Your Server Name**<br>
 Fixed some bugs people were having from the startup process.<br>
 
-
 to install:
 ------
 **[without git]**<br>
