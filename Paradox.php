@@ -85,8 +85,7 @@ $ws->on('ready', function ($discord) use ($ws) {
 $ini = new INI('config.ini');
 $d = $ini->read('config.ini');
 $pref=$d['settings']['Prefix'];
-
-	$discord->updatePresence($ws, $d['settings']['status'], false);
+$discord->updatePresence($ws, $d['settings']['status'], false);
 
 echo "            #    Login complete, Listening...    #".PHP_EOL;
 echo "            ######################################" . PHP_EOL;
