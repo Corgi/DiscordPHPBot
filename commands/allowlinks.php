@@ -1,7 +1,6 @@
 <?php
 $ini = new INI('config.ini');
 $d = $ini->read('config.ini');
-
 if($d['commands']['allowlinks'] == "1")
 {
 // $msg=str_replace("#allowlinks ", "", $message->content);
