@@ -5,12 +5,13 @@ https://github.com/teamreflex/DiscordPHP<br>
 Need Help?
 ------
 Join our Discord chat and talk with Proxy https://discord.gg/0pTKzt2BDIqDS4oW <br>
-Paradox 0.1.1b is here!
+Paradox 0.1.5b is here!
 ------
-**Paradox Version:** 0.1.1b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
+**Paradox Version:** 0.1.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
 Made installation process a little less painful in **0.1.5b**<br>
 Private message the bot: **#join serverlink**<br>
 Then you will need to type **#grantchannel Your Server Name**<br>
+Fixed some bugs people were having from the startup process.<br>
 
 to install:
 ------
