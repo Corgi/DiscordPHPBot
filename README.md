@@ -12,7 +12,6 @@ Made installation process a little less painful in **0.1.5b**<br>
 Private message the bot: **#join serverlink**<br>
 Then you will need to type **#grantchannel Your Server Name**<br>
 Fixed some bugs people were having from the startup process.<br>
-
 to install:
 ------
 **[without git]**<br>
