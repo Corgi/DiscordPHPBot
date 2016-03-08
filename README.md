@@ -2,7 +2,7 @@ Created using DiscordPHP from team-reflex
 ======
 Welcome **DoNotSpamPls** to contributors!<br>
 We're going to be updating the repo, and also adding detailed information on our Github Wiki page.<br>
-Keep checking back for more updates as **DoNotSpamPls** And myself adds new content every day!<br>
+Keep checking back for more updates as *DoNotSpamPls* And *Proxy* adds new content every day!<br>
 
 https://github.com/teamreflex/DiscordPHP<br>
 Need Help?
