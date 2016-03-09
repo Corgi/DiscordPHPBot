@@ -44,15 +44,8 @@ open **config.ini** fill in your email and password and put your discord name in
 Open the bot using **StartBot.bat** and than private message him **#join serverlink**<Br>
 Follow his instructions and in the same PM type: **#grantchannel Your server name**<br>
 
-https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
-**if you choose not to use these api's. just comment out the commands in Paradox.php.**<br><br>
-Setting up mashape key
-------
-First of, visit mashape and signup: https://market.mashape.com<br>
-Once your logged in click your applications, you should see a blue button **"Get the keys"**<br>
-Copy your Mashape key to your config.ini under *[apis]* mashape = "<yourkey>"<Br>
-and you're done!<br>
+https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br><br><br>
 
 Documentation
 ------
-More coming soon.
+You can get the documentation for the bot in [our wiki](https://github.com/proxikal/DiscordPHPBot/wiki)
