@@ -46,31 +46,6 @@ Follow his instructions and in the same PM type: **#grantchannel Your server nam
 
 https://discord.gg/0pTKzt2BDIqDS4oW (NEW LINK. it will not expire this time!) <br>
 **if you choose not to use these api's. just comment out the commands in Paradox.php.**<br><br>
-Setting up #weather command
-------
-First off you need to visit Weather underground api:<Br>
-http://www.wunderground.com/weather/api/d/docs?d=index <Br>
-You need to sign up to get an apiKey.<br>
-
-Once you've signed up Click "Key Settings" to obtain your key! <br>
-Place that key in your **config.ini** under *[apis]* in the weather spot.<br>
-it should look like this:<br>
-*[apis]*<br>
-weather = "your api key"<br>
-**And your done with the weather!** use: `#weather <zipcode>` <br><br>
-Setting up #shorturl command
-------
-First you need to visit bit.ly and signup (not with facebook or anything else)<br>
-make sure you sign up through **bit.ly** or you will have issues getting your **OAUTH code** <br>
-Onced signed in visit: https://bitly.com/a/oauth_apps type your password and click **Generate**<br>
-Once you've generated an OAUTH key copy and place it under *[apis]* in the bitly spot
-it should look like this:<br>
-*[apis]*<br>
-bitly = "your OAUTH code"<br><br>
-Now, you need to browse to **commands/shorturl.php** open in an editor.<br>
-on `line 15` you need to add your bit.ly username and password information.<br>
-change  `&login=USERNAME:PASSWORD` to your credentials.<br><br>
-**And you're done! use #shorturl http://url.com**<br><br>
 Setting up mashape key
 ------
 First of, visit mashape and signup: https://market.mashape.com<br>
@@ -78,11 +53,6 @@ Once your logged in click your applications, you should see a blue button **"Get
 Copy your Mashape key to your config.ini under *[apis]* mashape = "<yourkey>"<Br>
 and you're done!<br>
 
-cURL error 60: SSL Certification error
-------
-**FIX:** Download the cacert.pem file from above, place somewhere safe.<br>
-Open your php.ini file and place this line somewhere:<br>
-**curl.cainfo = "C:\directory here\cacert.pem"**<br>
 Documentation
 ------
 More coming soon.
