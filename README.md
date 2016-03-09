@@ -2,7 +2,7 @@ Welcome
 ======
 Welcome to the official Paradox repo. Here you can download and install the awesome Paradox bot!
 
-The bot is created using [DiscordPHP](https://github.com/teamreflex/DiscordPHP) made by [team-reflex](https://github.com/team-relfex)
+The bot is created using [DiscordPHP](https://github.com/teamreflex/DiscordPHP) made by [team-reflex](https://github.com/teamrelfex)
 
 Paradox 0.1.5b is here!
 ------
