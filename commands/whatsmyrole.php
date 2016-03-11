@@ -1,9 +1,13 @@
 <?php
+use Discord\Exceptions\PartRequestFailedException;
+
+$iniD = new INI('inis/masters.ini');
+$dD = $iniD->read('inis/masters.ini');
+
 if($specdat == "what's my role?")
 {
-foreach( $datas['owners'] as $key=>$data )
-{
-if(($message->author->username == $key) && ($data == 1))
+
+if($dD[$message->full_channel->guild->id][$message->author->id] == "1")
 {
 $am = $am + 1;
 }
@@ -11,12 +15,25 @@ $am = $am + 1;
 
 if($am > 0)
 {
-$message->reply("You're set to **master role**, You are allowed to post links & use my master commands." . $msg); 
+
+	try
+	{
+$message->reply("You're my **master** on `".$message->full_channel->guild->name."`"); 
+} catch (PartRequestFailedException $e) {
+}
+
 }
 else
 {
-$message->reply("You're not set as one of my masters. **Link restriction is on.**" . $msg); 
+
+	try
+	{
+$message->reply("You're not set as one of my masters on `".$message->full_channel->guild->name."`"); 
+} catch (PartRequestFailedException $e) {
 }
+
+
 }
+
 
 ?>

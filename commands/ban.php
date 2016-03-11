@@ -1,4 +1,11 @@
 <?php
+/*
+try{
+        \Discord\Helpers\Guzzle::put("guilds/$guildid/bans/$memberid?delete-message-days=1");
+    }catch (\Discord\Exceptions\DiscordRequestFailedException $e) {
+        $logger->err($e);
+    }
+    */
 use Discord\Exceptions\PartRequestFailedException;
 
 $ini = new INI('config.ini');
@@ -21,9 +28,9 @@ $guild = $discord->guilds->get('name', $message->full_channel->guild->name);
 $channel = $guild->channels->get('id', $message->channel_id);
 
 
-if($d['commands']['kick'] == "1")
+if($d['commands']['ban'] == "1")
 {
-$msg=str_replace($pref."kick ", "", strtolower($message->content));
+$msg=str_replace($pref."ban ", "", strtolower($message->content));
 $goid=str_replace("<@", "", $msg);
 $goid=str_replace(">", "", $goid);
 $user = \Discord\Parts\User\User::find($goid);
@@ -40,30 +47,36 @@ if(strpos($msg, "@") > 0)
 	{
 
 
-try 
+try
 {
-$memberToKick = $guild->members->get('id', $opt_id);
-$memberToKick->kick();
+\Discord\Helpers\Guzzle::put("guilds/".$message->full_channel->guild->id."/bans/".$opt_id."?delete-message-days=1");
 $did=$did+1;
-$message->channel->sendMessage("The user `".$opt_user."` was kicked on `".$message->full_channel->guild->name."`");
-} catch (PartRequestFailedException $e) {
+$message->channel->sendMessage(":hammer: The user `".$opt_user."` has been banned from `".$message->full_channel->guild->name."`");
+} catch (DiscordRequestFailedException $e) {
 
 	$req="```ruby"."\n";
 $guild = $discord->guilds->get('name', $d['settings']['server']);
 $channel = $guild->channels->get('name', "error_reports"); // you can change 'name' to any other attribute if you want
-$channel->sendMessage("`Automatic Error Report:` Someone ran into an error!\n ".$req."User: " . $message->author->username . " Guild: ".$message->full_channel->guild->name."\nFile: kick.php\nError Message:\n".$e->getMessage()."```");
+$channel->sendMessage("`Automatic Error Report:` Someone ran into an error!\n ".$req."User: " . $message->author->username . " Guild: ".$message->full_channel->guild->name."\nFile: ban.php\nError Message:\n".$e->getMessage()."```");
 
 
+
+$did=$did+1;
+// continue;
+} // end of try
+
+/*
+if($did > 0)
+{
 try
 {
 $message->channel->sendMessage("I don't have permissions to kick people in `" . $message->full_channel->guild->name . "`");
 } catch (PartRequestFailedException $e) {
 }
 
+}
+*/
 
-$did=$did+1;
-// continue;
-} // end of try
 
 
 
@@ -116,3 +129,4 @@ echo "This command is disabled. \n";
 
 } // this cmd only words in server
 ?>
+

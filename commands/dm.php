@@ -13,13 +13,19 @@ $global->sendMessage("You can't use this command in `private message`");
 else
 {
 
-if($d['commands']['getid'] == "1")
+if($d['commands']['dm'] == "1")
 {
 $guild = $discord->guilds->get('name', $message->full_channel->guild->name);
 $members = $guild->members; // Returns a collection of members
-$nerd=str_replace($pref."getid ", "", strtolower($message->content));
+$nerd=str_replace($pref."dm ", "", strtolower($message->content));
 $goid=str_replace("<@", "", $nerd);
 $goid=str_replace(">", "", $goid);
+$msg=explode(" ", $goid);
+$goid=$msg[0];
+$cont=$msg[1];
+
+$cont=str_replace($pref."dm <@".$goid."> ", "", $message->content);
+
 $user = \Discord\Parts\User\User::find($goid);
 $opt_user=$user->username;
 $opt_id=$user->id;
@@ -27,11 +33,14 @@ $did=0;
 
 if(strpos($nerd, "@") > 0)
 {
-$getstatus = $members->get('username', $opt_user);
-
 try
 {
-$message->channel->sendMessage($nerd . "'s ID: " . $opt_id);
+$rez="```fix"."\n";
+
+$user = \Discord\Parts\User\User::find($goid);
+$user->sendMessage("Sent by: " . $message->author->username . ": \n".$rez.$cont."```");
+$message->channel->sendMessage("Message sent to `".$opt_user."`");
+
 } catch (PartRequestFailedException $e) {
 }
 
