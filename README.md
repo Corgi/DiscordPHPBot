@@ -4,11 +4,10 @@ Welcome to the official Paradox repo. Here you can download and install the awes
 
 The bot is created using [DiscordPHP](https://github.com/teamreflex/DiscordPHP) made by [team-reflex](https://github.com/teamrelfex)
 
-Paradox 0.1.5b is here!
+Paradox 2.0.0 is here!
 ------
-**Paradox Version:** 0.1.5b - **[TODO.md](https://github.com/proxikal/DiscordPHPBot/blob/master/TODO.md "TODO.md")**<br><br>
-Made installation process a little less painful in **0.1.5b**<br>
-Fixed some bugs people were having from the startup process.<br>
+Big update! added error handling, the bot should be less buggy! pms the user when it can't complete it's task<br>because of permissions.
+Added support for pm invitation and lots more!<br>
 
 How to install:
 ------
