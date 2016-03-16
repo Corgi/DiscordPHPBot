@@ -109,8 +109,6 @@ include 'events/guild_member_add.php';
 
 $this->ws->on(Event::MESSAGE_CREATE, function ($message, $discord, $newdiscord) use ($ws) {
 $sendError=1;
-if($message->author->username == "Proxy")
-{
 $ini = new INI('config.ini');
 $d = $ini->read('config.ini');
 $iniD = new INI('inis/masters.ini');
@@ -120,11 +118,6 @@ $p = $iniP->read('inis/Prefix.ini');
 $iniA = new INI('inis/afk.ini');
 $dA = $iniA->read('inis/afk.ini');
 include 'events/message_create.php';
-
-
-
-
-}
 });
 
 
