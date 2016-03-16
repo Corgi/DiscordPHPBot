@@ -106,20 +106,17 @@ $iniP->write('inis/Prefix.ini');
 
 
 
+
 try{
-$guild = $discord->guilds->get('name', "Paradox Lounge");
+$guild = $discord->guilds->get('name', $d['settings']['server']);
 if(isset($guild))
 {
-
-$channel = $guild->channels->get('name', "general"); // you can change 'name' to any other attribute if you want
+// ### You can have the bot
+$channel = $guild->channels->getAll('type', "text")->first(); // you can change 'name' to any other attribute if you want
 $channel->sendMessage($newguild." Has called me to duty!"); // will return a Message object
-
 } // check if guild exists.
-
-    } catch (PartRequestFailedException $e) {
-    } // end of try
-
-
+} catch (PartRequestFailedException $e) {
+} // end of try
 
 
 
