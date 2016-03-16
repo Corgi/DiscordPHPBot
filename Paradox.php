@@ -373,7 +373,7 @@ $discord->acceptInvite($message->content);
 $_SESSION['master'] = $message->author->username;
 $_SESSION['non_Carbon'] = $message->author->id;
 $message->author->sendMessage("Alright I'm now on your server! If you've invited me using carbonite.com Then I've made the server owner my Bot Master. If this is not what you wanted, kick Paradox and invite him yourself in PM!");
-} catch (InviteInvalidException $e) {
+} catch (\Exceptions $e) {
 $message->author->sendMessage("Something has gone wrong, either i am banned from this server, or the invite is expired!");
 } // end of try
 
@@ -390,7 +390,7 @@ $discord->acceptInvite($server_link);
 $_SESSION['master'] = $message->author->username;
 $_SESSION['non_Carbon'] = $message->author->id;
 $message->author->sendMessage("Alright I'm now on your server! If you've invited me using carbonite.com Then I've made the server owner my Bot Master. If this is not what you wanted, kick Paradox and invite him yourself in PM!");
-} catch (InviteInvalidException $e) {
+} catch (\Exceptions $e) {
 $invalid = "true";
 $message->author->sendMessage("Sorry, something has happened. \n ```".$e->getMessage()."```");
 }
@@ -420,7 +420,7 @@ $discord->acceptInvite($server_link);
 $_SESSION['master'] = $message->author->username;
 $_SESSION['non_Carbon'] = $message->author->id;
 $message->author->sendMessage("Alright I'm now on your server! If you've invited me using carbonite.com Then I've made the server owner my Bot Master. If this is not what you wanted, kick Paradox and invite him yourself in PM!");
-} catch (InviteInvalidException $e) {
+} catch (\Exceptions $e) {
 $message->author->sendMessage("Sorry, something has happened. \n ```".$e->getMessage()."```");
 $invalid="true";
 }
