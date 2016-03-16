@@ -4,9 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93c89b9e2492cfef6a541bbf3264c301",
-    "content-hash": "d1eb55a320c362795b160d6dc012395a",
+    "hash": "208bfccc174d811587604fb28fd9489f",
+    "content-hash": "9c416a590597b3147bf07906779b2f42",
     "packages": [
+        {
+            "name": "TrafficCophp/ByteBuffer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nesQuick/ByteBuffer.git",
+                "reference": "e94e5c87c41bc79c0f738b0fa89bad11d27ae0b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nesQuick/ByteBuffer/zipball/e94e5c87c41bc79c0f738b0fa89bad11d27ae0b4",
+                "reference": "e94e5c87c41bc79c0f738b0fa89bad11d27ae0b4",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "TrafficCophp": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ole 'nesQuick' Michaelis",
+                    "email": "ole.michaelis@googlemail.com",
+                    "homepage": "http://www.codestars.eu"
+                }
+            ],
+            "description": "Node.js inspired byte stream buffer for PHP.",
+            "keywords": [
+                "Buffer",
+                "Bytehandling",
+                "Socket",
+                "binary data",
+                "library",
+                "pack",
+                "stream",
+                "wrapper"
+            ],
+            "time": "2016-01-13 22:50:58"
+        },
         {
             "name": "cboden/ratchet",
             "version": "v0.3.4",
@@ -376,12 +420,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "30f8346719d2ba1da9b2799f60b3dea360d908f4"
+                "reference": "6a173ddae1a8e58be871f6d010e88c029eaf5cae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/55ab7c5edccd60c4089eb938af158b249f9831a1",
-                "reference": "30f8346719d2ba1da9b2799f60b3dea360d908f4",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/6a173ddae1a8e58be871f6d010e88c029eaf5cae",
+                "reference": "6a173ddae1a8e58be871f6d010e88c029eaf5cae",
                 "shasum": ""
             },
             "require": {
@@ -430,20 +474,20 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-03-05 02:10:00"
+            "time": "2016-03-11 16:36:56"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "976e0f50981f845dcee1c25bfcac2304a7bb5583"
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/promises/zipball/bb9024c526b22f3fe6ae55a561fd70653d470aa8",
-                "reference": "976e0f50981f845dcee1c25bfcac2304a7bb5583",
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +525,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-02-26 22:29:15"
+            "time": "2016-03-08 01:15:46"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -547,12 +591,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "14837fd94c1a58fe804da8a1b89b990e82858e39"
+                "reference": "979d9419949834d5dc2d6e1b3733ecf009157746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/14837fd94c1a58fe804da8a1b89b990e82858e39",
-                "reference": "14837fd94c1a58fe804da8a1b89b990e82858e39",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/979d9419949834d5dc2d6e1b3733ecf009157746",
+                "reference": "979d9419949834d5dc2d6e1b3733ecf009157746",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +625,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-24 15:14:32"
+            "time": "2016-03-13 19:51:04"
         },
         {
             "name": "illuminate/support",
@@ -589,12 +633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "56292f84786e60e310ec1c55c57e1bba2f866876"
+                "reference": "069cc09853ea817804a4d072a9ca0f74e24a3731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/56292f84786e60e310ec1c55c57e1bba2f866876",
-                "reference": "56292f84786e60e310ec1c55c57e1bba2f866876",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/069cc09853ea817804a4d072a9ca0f74e24a3731",
+                "reference": "069cc09853ea817804a4d072a9ca0f74e24a3731",
                 "shasum": ""
             },
             "require": {
@@ -636,7 +680,53 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2016-03-07 01:57:16"
+            "time": "2016-03-13 19:51:04"
+        },
+        {
+            "name": "mashape/unirest-php",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mashape/unirest-php.git",
+                "reference": "2bedcf05acf56a50d4d96a7fcd0a1856308095cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mashape/unirest-php/zipball/2bedcf05acf56a50d4d96a7fcd0a1856308095cb",
+                "reference": "2bedcf05acf56a50d4d96a7fcd0a1856308095cb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*",
+                "phpunit/phpunit": "~4.4"
+            },
+            "suggest": {
+                "ext-json": "Allows using JSON Bodies for sending and parsing requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Unirest": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Unirest PHP",
+            "homepage": "https://github.com/Mashape/unirest-php",
+            "keywords": [
+                "client",
+                "curl",
+                "http",
+                "https",
+                "rest"
+            ],
+            "time": "2016-02-25 04:27:05"
         },
         {
             "name": "nesbot/carbon",
@@ -769,6 +859,60 @@
             "time": "2016-02-25 18:17:16"
         },
         {
+            "name": "react/datagram",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/datagram.git",
+                "reference": "b1ecceed9ab453373b96e6ac77d29f2fc8c95af6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/datagram/zipball/b1ecceed9ab453373b96e6ac77d29f2fc8c95af6",
+                "reference": "b1ecceed9ab453373b96e6ac77d29f2fc8c95af6",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "~1.0|~2.0",
+                "php": ">=5.3",
+                "react/dns": ">=0.2, <0.5",
+                "react/event-loop": ">=0.2, <0.5",
+                "react/promise": "~2.0|~1.1"
+            },
+            "require-dev": {
+                "clue/block-react": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Datagram\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@lueck.tv"
+                }
+            ],
+            "description": "UDP datagram socket client and server for reactphp",
+            "homepage": "https://github.com/reactphp/datagram",
+            "keywords": [
+                "Socket",
+                "async",
+                "client",
+                "datagram",
+                "dgram",
+                "react",
+                "server",
+                "udp"
+            ],
+            "time": "2016-03-15 12:48:54"
+        },
+        {
             "name": "react/dns",
             "version": "dev-master",
             "source": {
@@ -812,16 +956,16 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "18c5297087ca01de85518e2b55078f444144aa1b"
+                "reference": "164799f73175e1c80bba92a220ea35df6ca371dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/18c5297087ca01de85518e2b55078f444144aa1b",
-                "reference": "18c5297087ca01de85518e2b55078f444144aa1b",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/164799f73175e1c80bba92a220ea35df6ca371dd",
+                "reference": "164799f73175e1c80bba92a220ea35df6ca371dd",
                 "shasum": ""
             },
             "require": {
@@ -835,12 +979,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4-dev"
+                    "dev-master": "0.5-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "React\\EventLoop\\": ""
+                    "React\\EventLoop\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -849,9 +993,10 @@
             ],
             "description": "Event loop abstraction layer that libraries can use for evented I/O.",
             "keywords": [
+                "asynchronous",
                 "event-loop"
             ],
-            "time": "2014-02-26 17:36:58"
+            "time": "2016-03-08 02:09:32"
         },
         {
             "name": "react/promise",
@@ -944,20 +1089,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket-client.git",
-                "reference": "1cc368ed54fd596a9084c835e79986ff339870db"
+                "reference": "7c79c33c385030dd9952d5dce991c018b71e46e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket-client/zipball/38dbd8fb963716d5667294f957aadc048aeaeb39",
-                "reference": "1cc368ed54fd596a9084c835e79986ff339870db",
+                "url": "https://api.github.com/repos/reactphp/socket-client/zipball/7c79c33c385030dd9952d5dce991c018b71e46e0",
+                "reference": "7c79c33c385030dd9952d5dce991c018b71e46e0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
-                "react/dns": "0.4.*",
-                "react/event-loop": "0.4.*",
-                "react/promise": "~2.0",
-                "react/stream": "0.4.*"
+                "php": ">=5.3.0",
+                "react/dns": "0.4.*|0.3.*",
+                "react/event-loop": "0.4.*|0.3.*",
+                "react/promise": "~2.0|~1.1",
+                "react/stream": "0.4.*|0.3.*"
+            },
+            "require-dev": {
+                "clue/block-react": "~1.0"
             },
             "type": "library",
             "extra": {
@@ -978,7 +1126,7 @@
             "keywords": [
                 "Socket"
             ],
-            "time": "2016-02-23 00:35:04"
+            "time": "2016-03-14 03:35:31"
         },
         {
             "name": "react/stream",
@@ -1034,12 +1182,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "1df0dbedb6d9407e5305afe7ca34bee0f2878407"
+                "reference": "3433bfec93209ce539751591c3a1d9a1ac5ff53b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/1df0dbedb6d9407e5305afe7ca34bee0f2878407",
-                "reference": "1df0dbedb6d9407e5305afe7ca34bee0f2878407",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/3433bfec93209ce539751591c3a1d9a1ac5ff53b",
+                "reference": "3433bfec93209ce539751591c3a1d9a1ac5ff53b",
                 "shasum": ""
             },
             "require": {
@@ -1086,7 +1234,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-04 07:56:56"
+            "time": "2016-03-10 11:16:56"
         },
         {
             "name": "symfony/http-foundation",
@@ -1094,16 +1242,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "2af0ebbacefec6865ea8ec2d1291b60ee69e41af"
+                "reference": "e8e96f62c8fe5187811abbb7e270f315a81c5765"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/6a5b4e01eeb168cea372c6a7eac023b80b31e846",
-                "reference": "2af0ebbacefec6865ea8ec2d1291b60ee69e41af",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/e8e96f62c8fe5187811abbb7e270f315a81c5765",
+                "reference": "e8e96f62c8fe5187811abbb7e270f315a81c5765",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.1"
             },
             "require-dev": {
                 "symfony/expression-language": "~2.8|~3.0"
@@ -1138,7 +1287,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-04 09:04:18"
+            "time": "2016-03-11 09:58:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1205,12 +1354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "2a870783774b9cd5e19f03407e85813151fb3237"
+                "reference": "6b5ecf16fd2cd35c120e4aab7d59866f438e55cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/2a870783774b9cd5e19f03407e85813151fb3237",
-                "reference": "2a870783774b9cd5e19f03407e85813151fb3237",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/6b5ecf16fd2cd35c120e4aab7d59866f438e55cd",
+                "reference": "6b5ecf16fd2cd35c120e4aab7d59866f438e55cd",
                 "shasum": ""
             },
             "require": {
@@ -1272,7 +1421,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2016-02-04 13:53:40"
+            "time": "2016-03-04 07:56:56"
         },
         {
             "name": "symfony/translation",
@@ -1280,12 +1429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "74893d6cb2536d7ec0152a0cff48859e6c80aceb"
+                "reference": "24c83c337998669e7ab3765dccea27f50d777076"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/74893d6cb2536d7ec0152a0cff48859e6c80aceb",
-                "reference": "74893d6cb2536d7ec0152a0cff48859e6c80aceb",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/24c83c337998669e7ab3765dccea27f50d777076",
+                "reference": "24c83c337998669e7ab3765dccea27f50d777076",
                 "shasum": ""
             },
             "require": {
@@ -1336,7 +1485,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-04 12:57:09"
+            "time": "2016-03-04 07:56:56"
         },
         {
             "name": "symfony/var-dumper",
@@ -1344,12 +1493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "3c2f3b6d45a3098450bd1a10376d1d50918006b5"
+                "reference": "62afb1ebe8a94718da77896caaf5907f8701df3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3c2f3b6d45a3098450bd1a10376d1d50918006b5",
-                "reference": "3c2f3b6d45a3098450bd1a10376d1d50918006b5",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/62afb1ebe8a94718da77896caaf5907f8701df3d",
+                "reference": "62afb1ebe8a94718da77896caaf5907f8701df3d",
                 "shasum": ""
             },
             "require": {
@@ -1399,7 +1548,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2016-02-13 09:24:02"
+            "time": "2016-03-10 11:16:56"
         },
         {
             "name": "team-reflex/discord-php",
@@ -1407,12 +1556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/teamreflex/DiscordPHP.git",
-                "reference": "f4708582fd5f5a3c88806be025c7499e6747b1fc"
+                "reference": "c7dccf50d854a252a5d6207bb727c1e665b11091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/teamreflex/DiscordPHP/zipball/f4708582fd5f5a3c88806be025c7499e6747b1fc",
-                "reference": "f4708582fd5f5a3c88806be025c7499e6747b1fc",
+                "url": "https://api.github.com/repos/teamreflex/DiscordPHP/zipball/c7dccf50d854a252a5d6207bb727c1e665b11091",
+                "reference": "c7dccf50d854a252a5d6207bb727c1e665b11091",
                 "shasum": ""
             },
             "require": {
@@ -1420,7 +1569,9 @@
                 "guzzlehttp/guzzle": "~5.3|~6.0",
                 "illuminate/support": "^5.1",
                 "nesbot/carbon": "^1.21",
-                "react/socket-client": "0.4.*"
+                "react/datagram": "dev-master",
+                "react/socket-client": "0.4.*",
+                "trafficcophp/bytebuffer": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.1",
@@ -1446,7 +1597,7 @@
                 }
             ],
             "description": "An unofficial API to interact with the voice and text service Discord.",
-            "time": "2016-03-08 02:04:45"
+            "time": "2016-03-15 08:41:51"
         }
     ],
     "packages-dev": [],

@@ -31,10 +31,19 @@ if(strtolower($specdat) == "respect this server")
 {
 include 'commands/respectthisserver.php'; // @Paradox what's your prefix returns my prefix on their server.
 }
-if(strpos($message->content, "debug") > 0)
+if(strtolower($specdat) == "disrespect this server")
+{
+include 'commands/disrespectthisserver.php'; // @Paradox what's your prefix returns my prefix on their server.
+}
+
+/*
+if(strtolower($specdat) == "debug")
 {
 include 'commands/debug.php'; // @Paradox what's your prefix returns my prefix on their server.
 }
+*/
+
+
 } catch (\Discord\Exceptions\DiscordRequestFailedException $e) {
     echo "Can't send message\r\n";
     $user1_id=$message->author->id;
@@ -42,5 +51,8 @@ $user = \Discord\Parts\User\User::find($user1_id);
 $user->sendMessage("It appears i don't have permissions on your server. if you want Paradox to react in your server, he needs to be able to send messages.");
 
 }
+
+
+
 
 } // end of @Paradox commands
