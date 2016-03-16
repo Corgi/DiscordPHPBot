@@ -1,15 +1,9 @@
 <?php
 $c=0;
 // ############## Channel restrictions ###################
-$servers  = parse_ini_string(file_get_contents( 'inis/masters.ini' ), true);
-
-foreach ($servers as $section)
+if($dD[$message->full_channel->guild->id]['Name'] != "")
 {
-if ($message->full_channel->guild->name == $section['Name'])
-{
-$c = $c + 1;
-}
-
+	$c=$c+1;
 }
 
 // ################## End channels #####################

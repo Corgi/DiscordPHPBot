@@ -77,6 +77,7 @@ if($ismute == "true")
 				$message->delete();
 			} catch (PartRequestFailedException $e) {
 //		echo "## something happened " . $e->getMessage().PHP_EOL;
+				$w=$w-1;
 				continue;
 			}
 			$num++;
@@ -122,6 +123,7 @@ if($ismute == "true")
 	//	echo "## DELETED => " . $mid.PHP_EOL;
 				$message->delete();
 			} catch (PartRequestFailedException $e) {
+				$w=$w-1;
 	//	echo "## something happened " . $e->getMessage().PHP_EOL;
 				continue;
 			}
@@ -204,13 +206,19 @@ if($badword == "true")
 
 $user = \Discord\Parts\User\User::find($message->author->id);
 $user->sendMessage("You're currently muted in Server: " . $message->full_channel->guild->name . " The reason being: " . $muted_reason);
-
  }
 
-
-	//	$message->channel->sendMessage("A word was detected that's not allowed here. Message sent by: `" . $getuser."`\n ```".$getmsg."```");
 		}
+		else
+		{
+if($_SESSION[$message->author->id.$message->channel_id.'mt'] == "")
+{
 
+	$message->channel->sendMessage("I can't mute people if my permissions aren't setup to manage messages...");
+$_SESSION[$message->author->id.$message->channel_id.'mt'] = "546";
+}
+
+		}
 
 } // make sure the channel wants to have a filter/
 
