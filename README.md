@@ -8,9 +8,13 @@ Paradox 2.9.2 is here!
 ------
 Even more bug fixes! And he's super fast now.. way more efficient!
 
-How to install:
+How to install (Windows):
 ------
-Read our [wiki page](https://github.com/proxikal/DiscordPHPBot/wiki/How-to-install) to see the installation process!
+Read our [wiki page](https://github.com/proxikal/DiscordPHPBot/wiki/How-To-Install-for-Windows) to see the windows installation process!
+
+How to install (Ubuntu):
+------
+Read our [wiki page](https://github.com/proxikal/DiscordPHPBot/wiki/How-to-install) to see the ubuntu installation process!
 
 Documentation
 ------
