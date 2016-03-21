@@ -14,7 +14,7 @@ Read our [wiki page](https://github.com/proxikal/DiscordPHPBot/wiki/How-To-Insta
 
 How to install (Ubuntu):
 ------
-Read our [wiki page](https://github.com/proxikal/DiscordPHPBot/wiki/How-to-install) to see the ubuntu installation process!
+Read our [wiki page](https://github.com/proxikal/DiscordPHPBot/wiki/How-to-install-for-Ubuntu) to see the ubuntu installation process!
 
 Documentation
 ------
