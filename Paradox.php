@@ -10,7 +10,7 @@ $masters  = parse_ini_string(file_get_contents( 'inis/masters.ini' ), true);
 echo "            ######################################" . PHP_EOL;
 echo "            #     Paradox Bot Command Center     #" . PHP_EOL;
 echo "            #         Created by: Proxy          #" . PHP_EOL;
-echo "            #           Version: 2.9.2           #" . PHP_EOL;
+echo "            #           Version: 3.0.0           #" . PHP_EOL;
 echo "            #          Framework: DiscordPHP     #" . PHP_EOL;
 
 $ini = new INI('config.ini');

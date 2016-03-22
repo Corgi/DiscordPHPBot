@@ -25,7 +25,7 @@ if($message->full_channel->guild->name != "")
 {
 
 
-	if($message->author->username != $d['settings']['owner'])
+	if($message->author->id != $d['settings']['owner'])
 	{
 
 
@@ -54,7 +54,7 @@ file_put_contents($file, $current);
 else
 {
 
-		if($message->author->username != $d['settings']['owner'])
+		if($message->author->id != $d['settings']['owner'])
 	{
 
 // ########## Logs all pm commands, the logs will not log the owner's commands.

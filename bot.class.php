@@ -33,12 +33,7 @@ $_SESSION['check_message'] = 0;
 $_SESSION['afk_bot_spam'] = 0;
 $_SESSION['spam_check'] = 0; // the time a last command was used
 $_SESSION['mute_warning'] = 0;
-$gamecode=0;
 $_SESSION['last_purge'] = 0;
-
-$_SESSION['non_Carbon'] = "";
-$_SESSION['master'] = "";
-
 ini_set("log_errors", 1);
 ini_set("error_log", "php-error.log");
 
