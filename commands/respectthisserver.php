@@ -8,7 +8,7 @@ $d = $ini->read('config.ini');
 echo "### IT WAS TRIGGERED = > RESPECT THIS ROLE".PHP_EOL;
 
 
-if(($d['settings']['owner'] == $message->author->username) || ($dD[$message->full_channel->guild->id]['Master'] == $message->author->username))
+if(($d['settings']['owner'] == $message->author->id) || ($dD[$message->full_channel->guild->id]['Master'] == $message->author->id))
 {
 
 			$ini->data['respect'][$message->full_channel->guild->id] = "1";

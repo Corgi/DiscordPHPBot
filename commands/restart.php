@@ -12,7 +12,7 @@ $pref=$thepref;
 
 	if($d['commands']['restart'] == "1")
 	{
-if($message->author->username == $d['settings']['owner'])
+if($message->author->id == $d['settings']['owner'])
 {
 
 $global->sendMessage(":heavy_exclamation_mark: Restarting Bot");

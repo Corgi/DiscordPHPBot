@@ -12,7 +12,7 @@ $pref=$thepref;
 if($d['commands']['shutdown'] == "1")
 {
 
-if($message->author->username == $d['settings']['owner'])
+if($message->author->id == $d['settings']['owner'])
 {
 $global->sendMessage(":exclamation: Shutting Down. Thanks for having me :v:");
 die;

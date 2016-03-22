@@ -19,7 +19,7 @@ else
 {
 
 
-if($dD[$opt_server]['Master'] == $message->author->username)
+if($dD[$opt_server]['Master'] == $message->author->id)
 {
 $found=0;
 

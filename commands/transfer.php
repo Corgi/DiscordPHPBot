@@ -34,7 +34,7 @@ $opt_id=$user->id;
 
 
 
-if($dD[$message->full_channel->guild->id]['Master'] == $message->author->username)
+if($dD[$message->full_channel->guild->id]['Master'] == $message->author->id)
 {
 
 
@@ -42,7 +42,7 @@ if($dD[$message->full_channel->guild->id]['Master'] == $message->author->usernam
 if(strpos($message->content, "@") > 0)
 {
 
-	$iniD->data[$message->full_channel->guild->id]['Master'] = $opt_user;
+	$iniD->data[$message->full_channel->guild->id]['Master'] = $opt_id;
 	$iniD->data[$message->full_channel->guild->id][$opt_id] = 1;
 	$iniD->write('inis/masters.ini');
 

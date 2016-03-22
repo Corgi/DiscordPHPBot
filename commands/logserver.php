@@ -9,7 +9,7 @@ if($pref == "")
 $pref=$thepref;
 }
 
-if($d['settings']['owner'] == $message->author->content)
+if($d['settings']['owner'] == $message->author->id)
 {
 if($d['commands']['logserver'] == "1")
 {

@@ -9,7 +9,7 @@ if($pref == "")
 $pref=$thepref;
 }
 
-if($d['settings']['owner'] == $message->author->username)
+if($d['settings']['owner'] == $message->author->id)
 {
 
 		if($d['commands']['status'] == "1")

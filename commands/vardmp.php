@@ -26,7 +26,7 @@ $serv_time=strtotime($guild->joined_at);
 
 $convert = 'days='.$days. ' hours='.$hours. ' minutes='.$minutes . ' seconds = '.$seconds;
 
-if($message->author->username == $d['settings']['owner'])
+if($message->author->id == $d['settings']['owner'])
 {
 
 

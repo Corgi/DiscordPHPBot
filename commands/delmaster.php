@@ -47,7 +47,7 @@ echo "########## FOUND THE @ SYNBOL".PHP_EOL;
 $ini_array = parse_ini_file("inis/masters.ini");
 
 
-		if($dD[$opt_guild]['Master'] == $actualuser)
+		if($dD[$opt_guild]['Master'] == $message->author->id)
 		{
 
 			unset($iniD->data[$opt_guild][$opt_id]);
