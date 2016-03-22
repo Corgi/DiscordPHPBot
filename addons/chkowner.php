@@ -10,7 +10,7 @@ $ad = $ad + 1;
 }
 }
 
-if($message->author->username == $datas['settings']['owner'])
+if($message->author->id == $datas['settings']['owner'])
 {
 $ow = $ow + 1;
 $ad = $ad + 1;
