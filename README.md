@@ -6,7 +6,6 @@ The bot is created using [DiscordPHP](https://github.com/teamreflex/DiscordPHP) 
 
 Paradox 3.0.0 is here!
 ------
-A brand new & Much easier installation method! Read our wiki page.<br>
 Cleaned the code up a lot. made it a lot faster!
 
 How to install (Windows):
