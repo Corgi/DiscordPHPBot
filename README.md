@@ -4,9 +4,10 @@ Welcome to the official Paradox repo. Here you can download and install the awes
 
 The bot is created using [DiscordPHP](https://github.com/teamreflex/DiscordPHP) made by [team-reflex](https://github.com/teamrelfex)
 
-Paradox 2.9.2 is here!
+Paradox 3.0.0 is here!
 ------
-Even more bug fixes! And he's super fast now.. way more efficient!
+A brand new & Much easier installation method! Read our wiki page.<br>
+Cleaned the code up a lot. made it a lot faster!
 
 How to install (Windows):
 ------
