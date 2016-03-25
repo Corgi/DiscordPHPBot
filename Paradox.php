@@ -1,5 +1,6 @@
 <?php
 session_start();
+define('BOT_DIR', __DIR__);
 ini_set('memory_limit', '-1');
 header('Content-type: text/html; charset=utf-8');
 
