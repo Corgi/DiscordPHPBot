@@ -38,9 +38,21 @@ if(isset($opt[1]))
 
 if(strtolower($opt[0]) == "greetmsg")
 {
+			$isError=$isError+1;
+
+			if($word != "off")
+			{
 			$message->channel->sendMessage("My `Greetings Message` has been changed to: \n ```".$word."```");
-			$iniM->data[$message->full_channel->guild->id]['GreetMsg'] = $word;
-			$iniM->write('inis/masters.ini');
+			$iniD->data[$message->full_channel->guild->id]['GreetMsg'] = $word;
+			$iniD->data[$message->full_channel->guild->id]['GreetChannel'] = $channel->name;
+			}
+			else
+			{
+				unset($iniD->data[$message->full_channel->guild->id]['GreetMsg']);
+				$message->channel->sendMessage("I've wiped your custom `Greet` message");
+			}
+
+			$iniD->write('inis/masters.ini');
 
 } // end of add greetmsg
 
