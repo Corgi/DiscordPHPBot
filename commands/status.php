@@ -1,7 +1,7 @@
 <?php
-		$ini2 = new INI('config.ini');
-		$dd = $ini2->read('config.ini');
-		$iniP = new INI('inis/Prefix.ini');
+$ini2 = new INI('config.ini');
+$dd = $ini2->read('config.ini');
+$iniP = new INI('inis/Prefix.ini');
 $p = $iniP->read('inis/Prefix.ini');
 $pref=$p[$message->full_channel->guild->id]['Prefix'];
 if($pref == "")
@@ -16,9 +16,10 @@ if($d['settings']['owner'] == $message->author->id)
 {
 //		$message->reply("Attempting status change.:: ");
 		$nerd=str_replace($pref."status ", "", $message->content);
-		$discord->updatePresence($ws, $nerd, false);
+		$discord->updatePresence($this->ws, $nerd, false);
 		$ini2->data['settings']['status'] = $nerd;
 		$ini2->write('config.ini');
+		//$message->reply("Status Successfully Changed to **".$nerd."!**");
 		}
 		else
 		{
