@@ -9,7 +9,7 @@ if($pref == "")
 $pref=$thepref;
 }
 
-if($d['settings']['owner'] == $message->author->username)
+if($d['settings']['owner'] == $message->author->id)
 {
 $msg=str_replace($pref."enable ", "", $message->content);
 $ini->data['commands'][$msg] = 1;
