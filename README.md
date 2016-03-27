@@ -4,6 +4,10 @@ Welcome to the official Paradox repo. Here you can download and install the awes
 
 The bot is created using [DiscordPHP](https://github.com/teamreflex/DiscordPHP) made by [team-reflex](https://github.com/teamrelfex)
 
+This Bot is for Personal Servers Only!
+------
+Please keep this source for personal servers only!
+
 Paradox 3.0.0 is here!
 ------
 Cleaned the code up a lot. made it a lot faster!
