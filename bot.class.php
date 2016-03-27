@@ -54,6 +54,36 @@ public function dirSize($directory) {
 
 
 
+public function isMaster($server, $user)
+{
+$bl=0;
+    $guild = $this->discord->guilds->get('name', $server);
+    $owner = $guild->owner_id;
+    if(isset($guild))
+    {
+    $member = $guild->members->get('id', $user);
+        if(isset($member))
+        {
+            try
+            {
+            $role = $member->roles->get('name', "Bot Commander");
+            } catch (DiscordRequestFailedException $e) {
+                return false;
+            }
+            
+            if(isset($role))
+            {
+                return true;
+            }
+            if($user == $owner)
+            {
+                return true;
+            }
+        }
+    } // check to make sure the guild exists.
+}
+
+
 public function format_size($size) {
     global $units;
 
